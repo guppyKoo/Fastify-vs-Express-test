@@ -12,7 +12,7 @@ const SERVER_GENERATED_HASH = 'server-generated-hash'
 
 const createUserSchema = z.object({
   name: z.string().min(1),
-  email: z.string(),
+  email: z.string().email(),
   age: z.number().min(0),
 })
 
@@ -91,7 +91,7 @@ usersRouter.get('/users/:id', async (req, res) => {
  *             required: [name, email, age]
  *             properties:
  *               name: { type: string, minLength: 1 }
- *               email: { type: string }
+ *               email: { type: string, format: email }
  *               age: { type: number, minimum: 0 }
  *     responses:
  *       201:
