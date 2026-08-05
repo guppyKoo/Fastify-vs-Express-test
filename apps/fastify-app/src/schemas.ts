@@ -19,7 +19,7 @@ export const ErrorMessage = Type.Object({
 export const CreateUserBody = Type.Object(
   {
     name: Type.String({ minLength: 1 }),
-    email: Type.String(),
+    email: Type.String({ format: 'email' }),
     age: Type.Number({ minimum: 0 }),
   },
   { additionalProperties: false },
