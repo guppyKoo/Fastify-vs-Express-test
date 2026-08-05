@@ -10,7 +10,8 @@ const userSchema = new mongoose.Schema(
     passwordHash: { type: String, required: true },
     internalMemo: { type: String },
   },
-  { timestamps: true, collection: BENCH_COLLECTION },
+  // toJSON virtuals: 직렬화 시 `id`(문자열 버추얼) 포함 — fast-json-stringify는 toJSON() 결과를 사용
+  { timestamps: true, collection: BENCH_COLLECTION, toJSON: { virtuals: true } },
 )
 
 export const User = mongoose.model('User', userSchema)
