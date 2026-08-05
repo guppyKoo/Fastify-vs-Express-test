@@ -1,0 +1,263 @@
+{
+  "generatedAt": "2026-08-05T05:46:49.130Z",
+  "config": {
+    "warmupSeconds": 5,
+    "durationSeconds": 15,
+    "repetitions": 3,
+    "node": "v24.0.0"
+  },
+  "results": [
+    {
+      "framework": "express",
+      "stage": "A-hello",
+      "path": "/hello",
+      "connections": 100,
+      "runs": [
+        {
+          "reqPerSec": 34555.2,
+          "latencyP50": 2,
+          "latencyP97_5": 5,
+          "latencyP99": 6,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 36801.07,
+          "latencyP50": 2,
+          "latencyP97_5": 5,
+          "latencyP99": 6,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 32249.07,
+          "latencyP50": 2,
+          "latencyP97_5": 6,
+          "latencyP99": 7,
+          "non2xx": 0
+        }
+      ],
+      "median": {
+        "reqPerSec": 34555.2,
+        "latencyP50": 2,
+        "latencyP97_5": 5,
+        "latencyP99": 6,
+        "non2xx": 0
+      }
+    },
+    {
+      "framework": "express",
+      "stage": "B-delayed",
+      "path": "/delayed",
+      "connections": 100,
+      "runs": [
+        {
+          "reqPerSec": 3084.74,
+          "latencyP50": 32,
+          "latencyP97_5": 34,
+          "latencyP99": 36,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 3106.07,
+          "latencyP50": 32,
+          "latencyP97_5": 34,
+          "latencyP99": 36,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 3092.74,
+          "latencyP50": 32,
+          "latencyP97_5": 34,
+          "latencyP99": 36,
+          "non2xx": 0
+        }
+      ],
+      "median": {
+        "reqPerSec": 3092.74,
+        "latencyP50": 32,
+        "latencyP97_5": 34,
+        "latencyP99": 36,
+        "non2xx": 0
+      }
+    },
+    {
+      "framework": "express",
+      "stage": "C-users-db",
+      "path": "/users",
+      "connections": 25,
+      "runs": [
+        {
+          "reqPerSec": 468.14,
+          "latencyP50": 50,
+          "latencyP97_5": 72,
+          "latencyP99": 81,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 464.07,
+          "latencyP50": 51,
+          "latencyP97_5": 71,
+          "latencyP99": 83,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 467.34,
+          "latencyP50": 51,
+          "latencyP97_5": 72,
+          "latencyP99": 81,
+          "non2xx": 0
+        }
+      ],
+      "median": {
+        "reqPerSec": 467.34,
+        "latencyP50": 51,
+        "latencyP97_5": 72,
+        "latencyP99": 81,
+        "non2xx": 0
+      }
+    },
+    {
+      "framework": "fastify",
+      "stage": "A-hello",
+      "path": "/hello",
+      "connections": 100,
+      "runs": [
+        {
+          "reqPerSec": 53761.07,
+          "latencyP50": 1,
+          "latencyP97_5": 4,
+          "latencyP99": 4,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 45844.27,
+          "latencyP50": 2,
+          "latencyP97_5": 4,
+          "latencyP99": 5,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 62464,
+          "latencyP50": 1,
+          "latencyP97_5": 4,
+          "latencyP99": 4,
+          "non2xx": 0
+        }
+      ],
+      "median": {
+        "reqPerSec": 53761.07,
+        "latencyP50": 1,
+        "latencyP97_5": 4,
+        "latencyP99": 4,
+        "non2xx": 0
+      }
+    },
+    {
+      "framework": "fastify",
+      "stage": "B-delayed",
+      "path": "/delayed",
+      "connections": 100,
+      "runs": [
+        {
+          "reqPerSec": 3151.8,
+          "latencyP50": 31,
+          "latencyP97_5": 33,
+          "latencyP99": 34,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 3150.47,
+          "latencyP50": 31,
+          "latencyP97_5": 33,
+          "latencyP99": 34,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 3141.94,
+          "latencyP50": 31,
+          "latencyP97_5": 34,
+          "latencyP99": 36,
+          "non2xx": 0
+        }
+      ],
+      "median": {
+        "reqPerSec": 3150.47,
+        "latencyP50": 31,
+        "latencyP97_5": 33,
+        "latencyP99": 34,
+        "non2xx": 0
+      }
+    },
+    {
+      "framework": "fastify",
+      "stage": "C-users-db",
+      "path": "/users",
+      "connections": 25,
+      "runs": [
+        {
+          "reqPerSec": 477.4,
+          "latencyP50": 50,
+          "latencyP97_5": 72,
+          "latencyP99": 82,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 492.74,
+          "latencyP50": 48,
+          "latencyP97_5": 71,
+          "latencyP99": 78,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 454.47,
+          "latencyP50": 49,
+          "latencyP97_5": 106,
+          "latencyP99": 116,
+          "non2xx": 0
+        }
+      ],
+      "median": {
+        "reqPerSec": 477.4,
+        "latencyP50": 50,
+        "latencyP97_5": 72,
+        "latencyP99": 82,
+        "non2xx": 0
+      }
+    },
+    {
+      "framework": "fastify",
+      "stage": "C2-users-noschema",
+      "path": "/users-noschema",
+      "connections": 25,
+      "runs": [
+        {
+          "reqPerSec": 489.94,
+          "latencyP50": 49,
+          "latencyP97_5": 74,
+          "latencyP99": 88,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 480.87,
+          "latencyP50": 50,
+          "latencyP97_5": 71,
+          "latencyP99": 81,
+          "non2xx": 0
+        },
+        {
+          "reqPerSec": 474.4,
+          "latencyP50": 50,
+          "latencyP97_5": 74,
+          "latencyP99": 85,
+          "non2xx": 0
+        }
+      ],
+      "median": {
+        "reqPerSec": 480.87,
+        "latencyP50": 50,
+        "latencyP97_5": 71,
+        "latencyP99": 81,
+        "non2xx": 0
+      }
+    }
+  ]
+}
